@@ -1,0 +1,177 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-cyan: hsl(179, 47%, 52%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  max-width: 100vw;
+  background-color: var(--light-gray);
+}
+
+main {
+  margin: 70px 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+main section {
+  padding: 25px;
+}
+
+section.main {
+  background-color: white;
+}
+
+section.main h1 {
+  color: var(--cyan);
+  margin-top: 5px;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+section.main h2 {
+  color: var(--bright-yellow);
+  margin-top: 27px;
+  font-size: 0.9em;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+section.main h3 {
+  color: var(--grayish-blue);
+  margin-top: 20px;
+  font-size: 0.85em;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+section.subscription {
+  background-color: var(--cyan);
+  color: white;
+}
+
+section.subscription h2 {
+  font-size: 1.1em;
+}
+
+section.subscription h3 {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+
+section.subscription h3 span.bold {
+  font-size: 1.9em;
+  font-weight: 700;
+}
+
+section.subscription h3 span.per-month {
+  font-weight: 400;
+  margin-left: 10px;
+  color: var(--light-gray);
+}
+
+section.subscription p {
+  margin-top: 7px;
+}
+
+section.subscription button {
+  background-color: var(--bright-yellow);
+  cursor: pointer;
+  font-family: "Karla", sans-serif;
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  border: 0;
+  font-weight: 700;
+  font-size: 0.9em;
+  color: white;
+}
+
+section.footer {
+  background-color: var(--light-cyan);
+}
+
+section.footer h2 {
+  color: white;
+  font-size: 1.1em;
+}
+
+section.footer h3 {
+  margin-top: 20px;
+  color: var(--light-gray);
+  font-size: 0.85em;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* RESPONSIVE DESIGN */
+@media (min-width: 768px) {
+  main {
+    margin: 20vh 27.77vw;
+    display: grid;
+    grid-template-areas:
+      "a a"
+      "b c";
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main section {
+    padding: 40px;
+  }
+
+  section.main {
+    grid-area: a;
+    padding-right: 70px;
+  }
+
+  section.main h1 {
+    font-size: 1.5em;
+  }
+
+  section.main h2 {
+    font-size: 1.1em;
+  }
+
+  section.main h3 {
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  section.subscription {
+    grid-area: b;
+  }
+
+  section.footer {
+    grid-area: c;
+  }
+
+  section.footer h3 {
+    line-height: 1.5;
+  }
+}
