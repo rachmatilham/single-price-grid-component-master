@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page on Frontend Mentor]()
+- Solution URL: [Solution page on Frontend Mentor](https://www.frontendmentor.io/solutions/single-price-grid-component-ecZPkubJJ)
 - Github Pages URL: [Github Pages](https://rachmatilham.github.io/single-price-grid-component-master/)
 
 ## My process
